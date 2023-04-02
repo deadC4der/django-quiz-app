@@ -4,7 +4,7 @@ from django.contrib.admin.widgets import FilteredSelectMultiple
 # Register your models here.
 from .models import Quiz, Category, Question, Progress
 from mcq.models import MCQQuestion, Answer
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from .models import CSVUpload
 
 

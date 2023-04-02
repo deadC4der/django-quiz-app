@@ -16,7 +16,7 @@ class MCQQuestion(Question):
         help_text="The order in which multichoice \
                     answer options are displayed \
                     to the user",
-        verbose_name="Answer Order")
+        verbose_name="Answer Order", default='content')
 
     def check_if_correct(self, guess):
         answer = Answer.objects.get(id=guess)
